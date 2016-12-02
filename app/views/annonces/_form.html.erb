@@ -1,0 +1,24 @@
+<div class="form">
+
+  <%= form_for @annonce do |f| %>
+
+    <div class="field ">
+      <%= f.label :Titre%><br/>
+      <%= f.text_field :titre, autofocus: true %>
+    </div>
+
+    <div class="field ">
+        <%= f.label :description %><br/>
+        <%= f.text_field :description, autofocus: true %>
+    </div>
+
+    <div class="field ">
+        <%= f.label :Prix %><br/>
+        <%= f.text_field :prix, autofocus: true %>
+    </div>
+
+    <br />
+        <%= f.submit "Valider" %>
+    <% end %>
+
+</div>
