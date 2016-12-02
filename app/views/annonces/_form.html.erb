@@ -21,6 +21,8 @@
       <%= f.file_field :image, autofocus: true %>
     </div>
 
+      <%= f.select :categorie, Categorie.all.collect { |p| [ p.nom, p.id ] }, { label: "Catégorie: "}, { class: "selectpicker" } %>
+
     <br />
         <%= f.submit "Valider" %>
     <% end %>

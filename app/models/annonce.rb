@@ -1,6 +1,7 @@
 class Annonce < ApplicationRecord
 
   belongs_to :user
+  belongs_to :categorie
 
   mount_uploader :image, ImageUploader
 
