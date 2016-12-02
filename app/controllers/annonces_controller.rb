@@ -26,7 +26,7 @@ class AnnoncesController < ApplicationController
   def update
     @annonce = Annonce.find(params[:id])
     @annonce.update(annonce_params)
-    redirect_to mes_annonces_path
+    redirect_to root_path
   end
 
   def destroy

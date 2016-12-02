@@ -23,7 +23,8 @@
 
       <%= f.select :categorie, Categorie.all.collect { |p| [ p.nom, p.id ] }, { label: "Catégorie: "}, { class: "selectpicker" } %>
 
-    <br />
+    <br /><br />
+    
         <%= f.submit "Valider" %>
     <% end %>
 

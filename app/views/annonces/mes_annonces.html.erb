@@ -1,17 +1,11 @@
 <div class="row">
-  <% @annonces.each do |f| %>
-    <div class="col-md-9 col-md-offset-3">
-      <div class="col-md-7">
-        <div class="thumbnail">
-          <%= image_tag f.image %><br /><br />
-          <p>Titre:<br /><%= f.titre %></p>
-          <p>Descripton:<br /> <%= f.description %></p>
-          <p><%= f.prix %> euro</p>
-          <%= link_to "Editer",  edit_annonce_path(f.id), class: 'btn btn-success', method: :get %>
-          <%= link_to "Supprimer", annonce_path(f.id), class: 'btn btn-danger', method: :delete %>
-        </div>
-      </div>
-    </div>
-  <% end %>
-
+    <% @annonces.each do |f| %>
+    <div class="col-md-4 thumbnail col-flex">
+        <%= image_tag f.image  %><br/><br/>
+        <p>Titre:
+            <%= f.titre %>
+        </p>
+        <%= link_to "Editer",  edit_annonce_path(f.id), class: 'btn btn-success', method: :get %>
+        <%= link_to "Supprimer", annonce_path(f.id), class: 'btn btn-danger', method: :delete %>  </div>
+    <% end %>
 </div>
