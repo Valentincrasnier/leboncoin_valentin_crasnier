@@ -31,7 +31,7 @@
         <ul class="nav navbar-nav">
           <li><%= link_to "Acceuil", annonces_path, method: :get %></li>
           <li><%= link_to "Mes annonces", annonces_path, method: :get %></li>
-          <li><%= link_to "Déposer une annonce", annonce_path, method: :get %></li>
+          <li><%= link_to "Déposer une annonce", new_annonce_path, method: :get %></li>
           <li><%= link_to "Mon compte", edit_user_registration_path, method: :get %></li>
         </ul>
         <% end %>
