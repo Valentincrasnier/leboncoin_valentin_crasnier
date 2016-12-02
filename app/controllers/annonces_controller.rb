@@ -26,7 +26,7 @@ class AnnoncesController < ApplicationController
   def update
     @annonce = Annonce.find(params[:id])
     @annonce.update(annonce_params)
-    redirect_to root_path
+    redirect_to mes_annonces_path
   end
 
   def destroy
@@ -35,6 +35,9 @@ class AnnoncesController < ApplicationController
     redirect_to root_path
   end
 
+  def mes_annonces
+    @annonces = Annonce.getAnnoncesByUser(current_user.id)
+  end
   private
 
       # Never trust parameters from the scary internet, only allow the white list through.
