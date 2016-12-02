@@ -15,7 +15,21 @@ class AnnoncesController < ApplicationController
     redirect_to root_path
   end
 
+  def edit
+    @annonce = Annonce.find(params[:id])
+  end
 
+  def update
+    @annonce = Annonce.find(params[:id])
+    @annonce.update(annonce_params)
+    redirect_to root_path
+  end
+
+  def destroy
+    annonce = Annonce.find(params[:id])
+    annonce.destroy
+    redirect_to root_path
+  end
 
   private
 
