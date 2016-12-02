@@ -5,20 +5,26 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.3.0
 
-* System dependencies
+* Initialization:
 
-* Configuration
+  * Commandes:
 
-* Database creation
+  - git clone
 
-* Database initialization
+  - cd ../endroit ou ce site le projet
 
-* How to run the test suite
+  - rake db:migare
 
-* Services (job queues, cache servers, search engines, etc.)
+  - rake db:seed
 
-* Deployment instructions
+  - rails s
 
-* ...
+* Gem utiliser:
+
+  - gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+  - gem 'pry'
+  - gem 'bootstrap-sass', '~> 3.3.6'
+  - gem "sprockets-rails", ">= 2.1.4"
+  - gem 'devise'
