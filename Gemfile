@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+# Gem pry for debugger
+gem 'pry'
+# Bootstrap for style css
+gem 'bootstrap-sass', '~> 3.3.6'
+gem "sprockets-rails", ">= 2.1.4"
 # devise for connection user
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
