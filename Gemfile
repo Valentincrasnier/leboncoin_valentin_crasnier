@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# For upload image
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 # Gem pry for debugger
 gem 'pry'
 # Bootstrap for style css
